@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- link to style.css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Google font-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Thasadith" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <title>Identidy Ingredients in Pictures</title>
+
+</head>
+
+<body>
+    <body>
+       
+      <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Food Recognition Engine</a>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+      <section id="showcase">
+          <div class="container">
+              <h2>Upload a food picture to identify its ingredients</h2>
+          </div>
+          <div class="container">
+              <!--changed -->
+              <!-- <img id="currentPhoto" src="SomeImage.jpg" onerror="this.src='Default.jpg'" alt="" width="100" height="120">
+              <img  src="./assets/images/hamburger.jpg" width="200" height="200" /> -->
+              <img id="image" src="" alt="No image loaded" onerror="this.src='./assets/images/pasta.jpg'" width="20" height="300"/>
+              <form>
+                <input id="inputBox" type="url" placeholder="https://example.com" value="">
+                <button type="submit" class="button_1">Submit</button>
+              </form>
+            </div>
+      </section>
+
+  <!-- add a table to list ingredients -->
+  <table id="ingredients" class="table table-bordered">
+    <tr id="header">
+        <td scope="col">Ingredients</td>
+        <td scope="col">Serving</td>
+        <td scope="col">Serving Unit</td>
+        <td scope="col">Calories(kcal)</td>
+        <td scope="col">Protein(g)</td>
+        <td scope="col">Carbonhydrates(g)</td>
+        <td scope="col">Fat(g)</td>
+    </tr>
+    <tr id="body"></tr>
+    </tr>
+  </table>
+</body>
+
+
+<!-- Link to Clarifi API -->
+<script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+
+<!-- link to javascript -->
+<script src="assets/javascript/logic.js"></script>
+
+</html>
