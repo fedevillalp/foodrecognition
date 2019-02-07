@@ -5,8 +5,9 @@ This app recognizes the ingredients present in a food image. It uses the Clarify
 
 
 #1. Example #1
-![Results Image](https://github.com/fedevillalp/bamazon/blob/master/screen1.png)
+![Results Image](https://github.com/fedevillalp/foodrecognition/image1.jpg)
 
 #2. Example #2
-![Results Image](https://github.com/fedevillalp/bamazon/blob/master/screen2.png)
+![Results Image](https://github.com/fedevillalp/foodrecognition/image1.jpg)
+
 
